@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+</head>
+<title>Video game survey project</title>
+<link rel="stylesheet" href="styles.css"
+</head>
+
+<body>
+<h1 id="title">Video game survey</h1>
+<p id="description">Thank you for taking this survey</p>
+<form id="survey-form">
+  <fieldset>
+  <label id="name-label">Enter your name<input type="text" id="name" placeholder="name" required/> </label>
+  <label id="email-label">Enter your email<input type="email" id="email" placeholder="email" required/>
+  <label id="number-label">How many video games do you own?<input type="number" id="number" min="1" max="999" placeholder="0" required/></label>
+</fieldset>
+
+<fieldset>
+<label>How often do you play video games?
+<label><input type="radio" name="time-played" class="inline" value="Not at all">Not at all</label>
+<label><input type="radio" name="time-played" class="inline" value="Sometimes">Sometimes</label>
+<label><input type="radio" name="time-played" class="inline" value="A lot">A lot</label>
+<label><input type="radio" name="time-played" class="inline" value="All the time">All the time</label>
+</label>
+</fieldset>
+<fieldset>
+<label id="select-label">What is your preferred console?
+<select id="dropdown">
+<option value="">select one</option>
+<option value="pc">PC</option>
+<option value="switch">Switch</option>
+<option value="playstation">Playstation</option>
+<option value="xbox">Xbox</option>
+<option value="other">Other</option>
+</select>
+</label>
+</fieldset>
+
+<fieldset>
+<label>
+What genres of video games do you like?
+<label><input type="checkbox" id="genre1" name="genre1" value="Platformer" class="inline">Platformer</label>
+<label><input type="checkbox" id="genre2" name="genre2" value="FPS" class="inline">FPS</label>
+<label><input type="checkbox" id="genre3" name="genre3" value="Puzzle" class="inline">Puzzle</label>
+<label><input type="checkbox" id="genre4" name="genre4" value="RPG" class="inline">RPG</label>
+<label><input type="checkbox" id="genre5" name="genre5" value="Racing" class="inline">Racing</label>
+</label>
+</fieldset>
+
+<fieldset>
+<label id="label-comment" name="label-comment">
+Any other comments?
+
+<textarea id="comment" name="comment" placeholder="comment">
+
+</textarea>
+</fieldset>
+</label>
+
+<input type="submit" id="submit" class="submit-button" value="Submit">
+
+</form>
+</body>
+
+</html>
